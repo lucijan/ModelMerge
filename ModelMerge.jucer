@@ -3,7 +3,21 @@
 <JUCERPROJECT id="dvlh0B" name="ModelMerge" projectType="guiapp" useAppConfig="0"
               addUsingNamespaceToJuceHeader="0" jucerFormatVersion="1">
   <MAINGROUP id="bbZzOy" name="ModelMerge">
+    <GROUP id="{34D90256-6794-5936-5329-8D6F7E0600E8}" name="Icons">
+      <FILE id="dvmQBt" name="mono.svg" compile="0" resource="1" file="Icons/mono.svg"/>
+      <FILE id="qGcSU6" name="stereo.svg" compile="0" resource="1" file="Icons/stereo.svg"/>
+    </GROUP>
     <GROUP id="{99BC5D38-A3BF-DA00-AFE6-A46DB09697AE}" name="Source">
+      <FILE id="Msrj8f" name="ExporterThread.cpp" compile="1" resource="0"
+            file="Source/ExporterThread.cpp"/>
+      <FILE id="Ai2u2m" name="ExporterThread.h" compile="0" resource="0"
+            file="Source/ExporterThread.h"/>
+      <FILE id="HkqdrC" name="InputPairComponent.cpp" compile="1" resource="0"
+            file="Source/InputPairComponent.cpp"/>
+      <FILE id="P1lxL4" name="InputPairComponent.h" compile="0" resource="0"
+            file="Source/InputPairComponent.h"/>
+      <FILE id="Y3iBYq" name="DropZone.cpp" compile="1" resource="0" file="Source/DropZone.cpp"/>
+      <FILE id="uzBuRg" name="DropZone.h" compile="0" resource="0" file="Source/DropZone.h"/>
       <FILE id="nd8PyN" name="Main.cpp" compile="1" resource="0" file="Source/Main.cpp"/>
       <FILE id="Gmivwh" name="MainComponent.h" compile="0" resource="0" file="Source/MainComponent.h"/>
       <FILE id="B5YmHG" name="MainComponent.cpp" compile="1" resource="0"
