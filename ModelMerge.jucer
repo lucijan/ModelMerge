@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <JUCERPROJECT id="dvlh0B" name="ModelMerge" projectType="guiapp" useAppConfig="0"
-              addUsingNamespaceToJuceHeader="0" jucerFormatVersion="1">
+              addUsingNamespaceToJuceHeader="0" jucerFormatVersion="1" projectLineFeed="&#10;">
   <MAINGROUP id="bbZzOy" name="ModelMerge">
     <GROUP id="{34D90256-6794-5936-5329-8D6F7E0600E8}" name="Icons">
+      <FILE id="tgqyNI" name="AppIcon.png" compile="0" resource="0" file="Icons/AppIcon.png"/>
+      <FILE id="YcI5lG" name="Artboard_Small.png" compile="0" resource="0"
+            file="Icons/Artboard_Small.png"/>
       <FILE id="dvmQBt" name="mono.svg" compile="0" resource="1" file="Icons/mono.svg"/>
       <FILE id="qGcSU6" name="stereo.svg" compile="0" resource="1" file="Icons/stereo.svg"/>
     </GROUP>
@@ -26,7 +29,7 @@
   </MAINGROUP>
   <JUCEOPTIONS JUCE_STRICT_REFCOUNTEDPOINTER="1"/>
   <EXPORTFORMATS>
-    <XCODE_MAC targetFolder="Builds/MacOSX">
+    <XCODE_MAC targetFolder="Builds/MacOSX" bigIcon="tgqyNI" smallIcon="YcI5lG">
       <CONFIGURATIONS>
         <CONFIGURATION isDebug="1" name="Debug" targetName="ModelMerge"/>
         <CONFIGURATION isDebug="0" name="Release" targetName="ModelMerge"/>
