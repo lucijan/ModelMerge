@@ -1,0 +1,10 @@
+ModelMerge - Tool to post-process multi track recordings from Tascam Model 24
+https://github.com/lucijan/ModelMerge
+
+(1) Copy ModelMerge.app to /Applications
+
+This app is NOT signed so macOS will not open it by double-clicking.
+Instead:
+
+(2) Right-click on the copied app and select open
+(3) Choose to open anyway in the dialog
