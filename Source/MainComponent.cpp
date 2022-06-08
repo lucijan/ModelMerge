@@ -97,9 +97,12 @@ void MainComponent::startExport()
 
     if(m_targetDir.getCurrentFile().getChildFile(m_nameEditor.getText()).exists())
     {
-        juce::AlertWindow::showMessageBox(juce::AlertWindow::AlertIconType::WarningIcon,
-                                          juce::translate("File Exists"),
-                                          juce::translate("File Already Exists"));
+        juce::AlertWindow::showAsync(juce::MessageBoxOptions()
+            .withIconType(juce::MessageBoxIconType::WarningIcon)
+            .withTitle(juce::translate("File Exists"))
+            .withMessage(juce::translate("File Already Exists"))
+            .withButton(juce::translate("Ok")),
+                                     nullptr);
 
         return;
     }

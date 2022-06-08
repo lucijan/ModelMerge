@@ -207,10 +207,14 @@ void ExporterThread::threadComplete(bool userPressedCancel)
 {
     if(m_status == Status::Failed)
     {
-        juce::AlertWindow::showMessageBox(juce::AlertWindow::WarningIcon,
-                                          juce::translate("Export Failed"),
-                                          m_errorMessage, juce::translate("Ok"),
-                                          m_parent);
+        juce::AlertWindow::showAsync(juce::MessageBoxOptions()
+            .withIconType(juce::MessageBoxIconType::WarningIcon)
+            .withTitle(juce::translate("Export Failed"))
+            .withMessage(m_errorMessage)
+            .withAssociatedComponent(m_parent)
+            .withButton(juce::translate("Ok")),
+                                     nullptr);
+
     }
     else if(m_status == Status::Success)
     {
